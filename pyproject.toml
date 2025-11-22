@@ -1,0 +1,18 @@
+[project]
+name = "ai-desktop-assistant"
+version = "1.0.0"
+description = "Windows Desktop AI Assistant with GUI, webcam, speech, and AI features"
+requires-python = ">=3.11"
+dependencies = [
+    "openai>=1.0.0",
+    "Pillow>=10.0.0",
+    "opencv-python>=4.8.0",
+    "pyttsx3>=2.90",
+    "speechrecognition>=3.10.0",
+    "mss>=9.0.0",
+    "rich>=13.0.0",
+    "pyaudio>=0.2.13",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
